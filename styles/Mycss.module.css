@@ -1,0 +1,31 @@
+.myGridWhenIncomingUser,
+.myGridWhenOutgoingUser {
+  display: grid;
+  gap: 0.5em;
+}
+
+.myGridWhenIncomingUser {
+  justify-items: flex-start;
+  grid-template-columns: min-content 2fr;
+  grid-template-areas:
+    "username username"
+    "profile chat";
+}
+.myGridWhenOutgoingUser {
+  justify-items: end;
+  /* align-items: center; */
+  grid-template-columns: 2fr min-content;
+  grid-template-areas:
+    "username username"
+    "chat profile";
+}
+
+.username {
+  grid-area: username;
+}
+.chat {
+  grid-area: chat;
+}
+.profile {
+  grid-area: profile;
+}
