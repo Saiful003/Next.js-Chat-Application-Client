@@ -5,7 +5,9 @@ import {
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import io from "socket.io-client";
 
-export const socket = io("https://chat-application-003.herokuapp.com");
+export const socket = io(
+  "https://next-js-chat-application-server-dnt9hzo81-saiful003.vercel.app"
+);
 
 interface IPayloadAction {
   message: string;

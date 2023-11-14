@@ -66,6 +66,7 @@ function Login() {
           </div>
 
           <button
+            disabled={username && !profileColor && !room}
             type="submit"
             className="w-full bg-green-400 mt-4 py-1 text-white rounded-md text-lg"
           >
