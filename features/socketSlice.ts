@@ -3,7 +3,7 @@ import {
   IPayloadForSendingMessage,
 } from "./../types/index";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import io from "socket.io-client";
+import { io } from "socket.io-client";
 
 export const socket = io("https://next-js-chat-application-server.vercel.app/");
 
